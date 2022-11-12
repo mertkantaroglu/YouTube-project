@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header section*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 15px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgb(74, 103, 136);
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: center;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-bottom: 100px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 250px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+/* The navigation menu links */
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style page content */
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+div a img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+iframe {
+  padding-top: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+div span {
+  padding: 20px;
+}
